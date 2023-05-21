@@ -1,8 +1,9 @@
-# app_name/views.py
+# auth/views.py
+from .models import User
 
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from .forms import LoginForm, RegistrationForm
+from ..auth.forms import LoginForm, RegistrationForm
 
 def login_view(request):
     if request.method == 'POST':

@@ -1,6 +1,6 @@
 # auth/urls.py
 from django.urls import path
-from auth import views
+from . import views
 
 app_name = 'auth'
 
